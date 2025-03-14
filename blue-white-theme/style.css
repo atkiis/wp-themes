@@ -1,0 +1,139 @@
+/*
+Theme Name: atkiis WP Theme
+Author: Antti Kiiskinen
+Description: A minimal WordPress theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: minimal, responsive
+Text Domain: atkiis-wp-theme
+*/
+
+/* Basic styling */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f9ff; /* Softer background tone */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: #1e88e5; /* Subtle blue for links */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #155a9c;
+}
+
+/* Header Menu */
+.header-menu {
+    background-color: #1e88e5; /* Vibrant blue */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #155a9c;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.header-menu ul li a {
+    color: white; /* White text for contrast */
+    background: #155a9c;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.header-menu ul li a:hover {
+    background: #1e88e5;
+    transform: scale(1.05);
+}
+
+/* Custom Header & Footer */
+.custom-header, footer {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    background: #e3f2fd; /* Light blue accent */
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #1e88e5;
+    color: white;
+    border-top: 4px solid #155a9c;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Area */
+.content-area {
+    width: 70%;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-loop,
+.article-full {
+    margin: 15px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.article-loop:hover,
+.article-full:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Sidebar */
+.primary-sidebar {
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f1f8ff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    .content-area, .primary-sidebar {
+        width: 90%;
+    }
+
+    .header-menu ul li a {
+        font-size: 14px; /* Adjust for smaller screens */
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content-area,
+    .primary-sidebar {
+        width: 100%;
+    }
+
+    .header-menu {
+        padding: 10px;
+    }
+}
